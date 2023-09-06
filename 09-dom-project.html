@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>instagram following button</p>
+    <button onclick="followi();" class="follow-button">🤍</button><br>
+    <p>amazon shippping calculator</p>
+    <input type="number" placeholder="cost-holder" class="input-kevin" onkeydown="
+   enter();
+    ">
+    <button class="calculate" onclick="calculat();">calculate</button> 
+    <p class="result"></p>
+    <script>
+        function enter(){
+            if(event.key === 'o'){
+        calculat();
+    }
+        }
+        
+function calculat(){
+    const inputElement = document.querySelector('.input-kevin') || 0;
+        
+        let kevin = Number(inputElement.value);
+        
+        if(kevin < 40){
+            kevin = kevin + 10;
+            
+         }
+
+        document.querySelector('.result')
+              .innerHTML = `$${kevin}`;
+              
+            
+            }
+        function followi(){
+            const following = document.querySelector('.follow-button');
+        
+    
+        
+        if(following.innerHTML === '🤍'){
+        following.innerHTML = '💙';
+    }else if(following.innerHTML === '💙'){
+        following.innerHTML = '🤍';
+    }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        const ai = Math.random();
+
+        let yourChoice = '';
+
+        if(ai => 0 && ai < 1 / 2){
+            yourChoice = 'head';
+        }else if(ai => 1 / 2 && ai < 1){
+            yourChoice = 'tail';
+        }
+       
+
+        let result = '';
+
+        if( yourChoice === 'tail'){
+            result = 'you lose.';
+        }else if( yourChoice === 'head'){
+            result = 'you win.';
+        }
+        let marks = JSON.parse(localStorage.getItem('marks'));
+        if(marks === null){
+            marks = {
+                wins : 0,
+                losses : 0
+            }}
+    
+    console.log(marks);
+        if(result === 'you lose.'){
+           
+        }else if(result === 'you win.'){
+            marks.wins += 1;
+        }
+        document.write(`yourChoice is head. ai chose ${yourChoice} . it mean ${result}. wins : ${marks.wins}, losses : ${marks.losses}`);
+
+        localStorage.setItem('marks', JSON.stringify(marks));
+        
+        ">head</button>
+        <button onclick="
+        marks = {
+            wins : 0,
+            losses : 0
+        }
+        localStorage.removeItem('marks');
+      
+        
+        ">reset</button>
+    <button onclick="">tail</button>
+    <hr>
+    <p class="mugisha">kevin</p>
+
+    <script>
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        function myfunction() {
+            alert('hello');
+            alert(`${2+2}`);
+        }
+        
+        console.log('kevin'.length);
+        console.log('kevin'.toUpperCase());
+        console.log('KEVIN'.toLowerCase());
+        console.log('kevin'.toLocaleUpperCase());
+
+        const mugisha = {
+            message : 'fuck off',
+            manzi : 'first rich in th world',
+            price : 2007
+        }
+        const {manzi, price} = mugisha;
+        console.log(manzi);
+        console.log(price.length);
+        console.log(price - 1968);
+
+        const object = {
+         manzi,
+         mugisha () {
+            console.log('can you sjhvdfhegtsfhdc sgjwywjyjggvcuyuwiwigwriw'.length);
+         }
+        }
+        object.mugisha();
+        console.log(object);
+        */
+       const basketball = {
+        price : 2095,
+        ['delivery-time'] : '3 days'
+       }
+       console.log(basketball.price);
+       basketball.price = 500;
+       console.log(basketball.price)
+       console.log(basketball['delivery-time']);
+
+       
+         function kevin(mugisha){
+            return mugisha.charAt(0).toUpperCase() + mugisha.slice(1);
+         }
+         console.log(kevin('nkeshimana' +' '+ 'mugisha'+' '+ 'kevin'.repeat(3)));
+         console.log('Good morning'.toLowerCase())
+    </script>
+</body>
+</html>

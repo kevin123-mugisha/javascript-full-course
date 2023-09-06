@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <p>reset  paper rock scissors</p>
+     <button onclick="
+     score = {
+      win : 0,
+      losses : 0,
+      ties : 0
+     }
+     localStorage.removeItem('score');
+     ">reset score</button>
+     <button onclick="
+     addPaper();addPaper();
+     let result = '';
+
+     if(computerKevin === 'paper'){
+      result = 'tie';
+     }else if(computerKevin === 'rock'){
+      result = 'you win.';
+     }else if(computerKevin === 'scissors'){
+      result = 'you lose';
+     }
+     
+
+     let score = JSON.parse(localStorage.getItem('score'));
+ 
+     if (score === null){
+      score = {
+         win : 0,
+         losses : 0,
+         ties : 0
+      }
+     
+     }
+
+        if(result === 'you win.'){
+            score.win += kevinn;
+        }else if(result === 'you lose'){
+            score.losses += kevinn;
+        }else if(result === 'tie'){
+            score.ties += kevinn;
+        }
+        if(score.win === stop){
+         alert('game over you won');
+        }else if(score.losses === stop){
+         alert('game over computer won');
+        }else if(score.ties === stop){
+         alert('game is draw');
+        }
+        localStorage.setItem('score', JSON.stringify(score));
+        
+      
+     alert(`you picked paper. computer picked ${computerKevin}. that mean ${result} wins:${score.win}, losses:${score.losses}, ties:${score.ties}`);
+     ">👏</button>
+     <button onclick="
+     const randomNumber1 = Math.random();
+     let computerKevin1 = '';
+    if(randomNumber1 >= 0 && randomNumber1 < 1 / 3){
+       computerKevin1 = 'scissors';
+    }else if(randomNumber1 >= 1 / 3 && randomNumber1 < 2 / 3){
+       computerKevin1 = 'paper';
+    }else{
+       computerKevin1 = 'rock';
+    }
+    alert(`AI chose ${computerKevin1}`);
+    
+    ">👍</button>
+    <button onclick="
+    const randomNumber2 = Math.random();
+
+    let computerKevin2 = '';
+   if(randomNumber2 >= 0 && randomNumber2 < 1 / 3){
+      computerKevin2 = 'paper';
+   }else if(randomNumber2 >= 1 / 3 && randomNumber2 < 2 / 3){
+      computerKevin2 = 'rock';
+   }else{
+      computerKevin2 = 'scissors';
+   }
+   alert(`AI chose ${computerKevin2}`);
+   ">✌</button>
+   
+    
+    <script>
+      const stop = 5;
+      const kevinn = 1;
+      let computerKevin = '';
+       function addPaper(){
+         const randomNumber = Math.random();
+
+
+if(randomNumber >= 0 && randomNumber < 1 / 3){
+  computerKevin ='paper';
+}else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+  computerKevin ='rock';
+}else{
+  computerKevin ='scissors';
+}
+
+       }
+          
+    </script>
+</body>
+</html>

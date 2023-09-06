@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = prompt('enter your age if you want to look for discount');
+
+       if(age >= 0 && age <= 6){
+        alert('you are allowed to take discount');
+       }else if(age >= 65){
+        alert('you are allowed to take discount');
+       }else{
+        alert('you are not allowed to take discount');
+       }
+
+       let age1 = '6 years or younger' || 'other wise no discount' || '65 years or older' || 'other wise no discount';
+       console.log(age1);
+    </script>
+</body>
+</html>

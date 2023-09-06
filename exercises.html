@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        cartQquantity += cartQquantity;
+        console.log(cartQquantity);
+        ">show cart quanyity</button>
+    <button onclick="
+    cartQquantity++;
+    console.log(cartQquantity);
+    ">add cart</button>
+    <button onclick="
+    cartQquantity+=4;
+    console.log(cartQquantity);
+    ">+4</button>
+    <button onclick="
+    cartQquantity+=5;
+    console.log(cartQquantity)
+    ">+5</button>
+    <button onclick="
+    cartQquantity--;
+    console.log(cartQquantity);
+    ">remove to cart</button>
+    <button onclick="
+    cartQquantity-=2;
+    let result = '';
+    if(cartQquantity === 0){
+        cartQquantity = 0
+    } 
+    alert(result);
+    console.log(cartQquantity);
+    ">-2</button>
+    <button onclick="
+    cartQquantity-=3;
+    console.log(cartQquantity);
+    ">-3</button>
+    <script>
+        let cartQquantity = 0;
+        var name = 'mugisha';
+        console.log(`my name is  ${name}`);
+
+        const coffee = 5;
+        const baggel = 3;
+        const soup = 9;
+        const total = coffee + baggel + soup;
+        const tax = Math.ceil( total * 0.1);
+        console.log(`tax(10%) is $${tax}`);
+        console.log(`the cost of food is $${total}`);
+        console.log(`total cost is $${total + tax}`);  
+
+    </script>
+</body>
+</html>

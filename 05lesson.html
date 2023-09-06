@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        console.log(`cart quantity : ${cartQuantity}`);
+        ">show quantity</button>
+    <button onclick="
+    cartQuantity ++;
+    console.log(`cart quantity : ${cartQuantity}`);
+    ">add to cart</button> 
+    <button onclick="
+    cartQuantity += 2;
+    console.log('cart quantity :' + cartQuantity);    
+    ">+2</button>
+    <button onclick="
+    cartQuantity += 3;
+    console.log(`cart quantity : ${cartQuantity}`);
+    ">+3</button>
+     <button onclick="
+     cartQuantity -= 3;
+     console.log(`cart quantity : ${cartQuantity}`);
+     ">-3</button>
+    <button onclick="
+    cartQuantity -= cartQuantity;
+    alert('do you wanna reset your cart quantity');
+    console.log('cart quantity :' + cartQuantity);
+    alert('cart was reset');
+    ">reset to cart</button>
+    <script>
+        /* there is some types of naming conventions
+        - camelCase here we capitalize all words exept first or stared word
+        -PascalCase PascalCase there is no big different with camelCase exept capitalize first word
+        - kebab-case those doesn't work in javascript it working only in html and css
+        - snake_case that used in css, html
+        */
+        let cartQuantity = 0;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const hours = prompt('enter your hour');
+        const name = 'mugisha kevin';
+        if(hours >= 6 && hours <= 12){
+            alert(`${'Good morning!'} ${name}` );
+        }else if(hours >= 13 && hours <= 17){
+            alert(`${'Good afternoon!'} ${name}`);
+        }else{
+            alert(`${'Good night'} ${name}`);
+        }
+        let kevin = hours >= 6 && hours <= 12 ? `${'Good moring'} ${name}`: `${'Good night'} ${name}!` || hours >= 13 && hours <= 17 ? `${'good afternoon!'} ${name}` : `${'Good night'} ${name} `;
+        let manzi = hours >= 6 && hours <= 12 || hours >= 13 && hours <= 17 || hours >= 18 && hours <= 6;
+        alert(manzi);
+    </script>
+</body>
+</html>

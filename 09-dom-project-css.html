@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ccs-button{
+            border: none;
+            background-color: black;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .followingg{
+            background-color: blue;
+            color: brown;
+        }
+       
+    </style>
+</head>
+<body>
+    <p>instagram following button</p>
+    <button onclick="followi();" class="follow-button ccs-button">follow</button><br>
+    <p>amazon shippping calculator</p>
+    <input type="number" placeholder="cost-holder" class="input-kevin" onkeydown="
+   enter();
+    ">
+    <button class="calculate" onclick="calculat();">calculate</button> 
+    <p class="result"></p>
+    <script>
+        function enter(){
+            if(event.key === 'o'){
+        calculat();
+    }
+        }
+        
+function calculat(){
+    const inputElement = document.querySelector('.input-kevin') || 0;
+        
+        let kevin = Number(inputElement.value);
+        
+        if(kevin < 40){
+            kevin = kevin + 10;
+            
+         }
+
+        document.querySelector('.result')
+              .innerHTML = `$${kevin}`;
+              
+            
+            }
+        function followi(){
+            const following = document.querySelector('.follow-button');
+        
+    
+        
+        if(following.innerHTML === 'follow'){
+        following.innerHTML = 'following';
+        following.classList.add('followingg');
+    }else if(following.innerHTML === 'following'){
+        following.innerHTML = 'follow';
+       following.classList.remove('followingg')
+    }
+        }
+    </script>
+</body>
+</html>

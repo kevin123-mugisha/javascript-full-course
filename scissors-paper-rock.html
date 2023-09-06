@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>rock  paper scissors</p>
+    <button onclick="
+    const game = Math.random();
+let game1 = '';
+  if(game >= 0 && game <= 1 / 3){
+    game1 = 'paper';
+  }else if(game >= 1 / 3 && game <= 2 / 3){
+    game1 = 'rock';
+  }else if(game >= 2 / 3 && game <= 3 / 3){
+    game1 = 'scissors';
+  }
+  alert(game1);
+
+  let result = '';
+
+  if(game1 === 'paper'){
+    result = 'you win';
+  }
+  else if(game1 === 'rock'){
+    result = 'tie.';
+  }else if(game1 === 'scissors'){
+    result = 'you lose';
+  }
+  alert(result);
+    ">👍</button>
+    <button onclick="
+    const game2 = Math.random();
+
+    let game4 = '';
+    if(game2 >= 0 && game2 <= 1 / 2){
+        game4 ='rock';
+    }else if(game2 >= 1 / 2 && game2 <= 2 / 3){
+        game4 ='paper';
+    }else if(game2 >= 2 / 3 && game2 <= 1){
+        game4 ='scissors';
+    }
+
+    alert(game4);
+
+    let result1 = '';
+    if(game4 === 'rock'){
+        result1 = 'you win';
+    }else if(game4 === 'paper'){
+        result1 = 'tie.';
+    }else if(game4 === 'scissors'){
+        result1 = 'you lose'
+    }
+    alert(`${result1}. ${score}`);
+
+    const score = {
+            win : 0,
+            losses: 0,
+            ties:0
+        }
+        if(result1 === 'you win'){
+            score.win ++;
+        }else if(result1 === 'you lose'){
+            score.losses = score.win - score.losses;
+        }else if(result1 === 'tie.'){
+            score.ties ++;
+        }
+        alert(`${result1}. ${score}`);
+    ;
+    ">👏</button>
+    <button onclick="
+   console.log(pickComputerMove());
+
+    let result2 = '';
+    if(game6 === 'paper'){
+        result2 = 'you win';
+    }else if (game6 === 'rock'){
+        result2 = 'you lose';
+    }else if(game6 === 'scissors'){
+        result2 = 'tie.';
+    }
+    alert(result2);
+    ">🤞</button>
+    <script>
+       
+        
+        let game6 = '';
+        
+        function pickComputerMove() {
+            const game5 = Math.random();
+
+
+         if(game5 >= 0 && game5 <= 1/3){
+           game6 = 'rock';
+       }else if(game5 >= 1/3 && game5 <= 2/3){
+           game6 = 'paper';
+       }else if(game5 >= 2/3 && game5 <= 1){
+           game6 = 'scissors';
+       }
+       alert(game6);
+
+       let number = 0;
+       if(game6 === 'paper'){
+        number++;
+       }else if(game6 === 'rock'){
+        number--;
+       }else if(game6 === 'scissors'){
+        number += 0;
+       }
+       return number;
+          console.log(number);  
+        }
+    </script>
+    
+</body>
+</html>
